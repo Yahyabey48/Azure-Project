@@ -9,16 +9,3 @@ variable "location" {
   type        = string
   default     = "westeurope"
 }
-
-variable "postgres_password" {
-  description = "Password for PostgreSQL server"
-  type        = string
-  sensitive   = true
-  default     = "MySecurePassword123!"
-}
-
-variable "postgres_region" {
-  description = "Région pour PostgreSQL"
-  type        = string
-  default     = "eastus" # Essayez une région comme eastus, northeurope ou centralus
-}
