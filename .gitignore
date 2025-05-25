@@ -1,0 +1,41 @@
+# Terraform files
+tf/.terraform/
+tf/*.tfstate
+tf/*.tfstate.backup
+tf/.terraform.lock.hcl
+tf/*.tfvars
+tf/crash.log
+
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+**/dist/
+**/.output/
+**/.nuxt/
+**/.cache/
+**/.nitro/
+
+# Environment variables
+**/.env*
+!**/.env.example
+
+# Logs
+**/logs
+**/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ZIP archives (deployments)
+*.zip
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
