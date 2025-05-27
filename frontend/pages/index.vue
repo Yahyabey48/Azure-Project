@@ -24,7 +24,7 @@
   async function fetchTasks() {
     try {
       console.log("URL de l'API:", $api.defaults.baseURL + '/tasks');
-      const response = await $api.get('/tasks');  // Ajoutez /api/ ici
+      const response = await $api.get('/tasks'); // Requête GET
       console.log("Données reçues:", response.data);
       tasks.value = response.data;
     } catch (error) {
@@ -35,7 +35,7 @@
   // Ajouter une tâche
   async function addTask(task) {
     try {
-      await $api.post('/tasks', task);  // Ajoutez /api/ ici
+      await $api.post('/tasks', task); // Requête POST
       await fetchTasks();
     } catch (error) {
       console.error('Erreur lors de l\'ajout d\'une tâche:', error);
